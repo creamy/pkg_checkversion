@@ -1,3 +1,4 @@
+
 Python script (tested 2.7.2 /should/ run 2.4-3.x) that compares installed 
 version of packages with latest available on FreeBSD.org. If there is a 
 newer (different) version available it will output the package info with
