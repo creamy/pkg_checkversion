@@ -26,6 +26,24 @@ on your command line.
 See ups.txt and updates.sh for example output.
 
 
+NOTE:
+
+issues encounter using the updates.sh script
+major versions available are not necessarily updates that will work with the
+other packages...
+
+1) don't delete gtk20 and replace with gtk30.
+(xfce4 depends on lib-gtk-2.0)
+2) don't delete gcc46 and replace with gcc48.
+(mplayer and ffmpeg depend on gcc46)
+3) don't delete docbook.. 
+(all the docbook packages are installed by xfce4, there are multiple versions)
+
+
+
+ 
+
+
 Waitman Gobble <waitman@waitman.net>
 San Jose, California USA
 NO WARRANTIES
