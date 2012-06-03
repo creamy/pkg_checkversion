@@ -6,7 +6,7 @@ current installed version and newer version, download the tbz package file,
 and perform an MD5 checksum verficiation of the file. Output is writted to 
 'updates.sh' in the CWD. For each package it prints a pkg_delete line for 
 the previous package version, then a pkg_add line for the new version. If 
-there is an MD5 checksm mismatch it will report to the updates.sh file. 
+there is an MD5 checksum mismatch it will report to the updates.sh file. 
 In the case of a mismatch it is recommended to unlink the particular package 
 file and run the python c.py script again. It will not download package 
 files if they already exist in the CWD, so running the script subsequent 
