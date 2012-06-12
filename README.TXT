@@ -1,3 +1,5 @@
+This is pkg_lite
+
 
 Python script (tested 2.7.2 /should/ run 2.4-3.x) that compares installed 
 version of packages with latest available on FreeBSD.org. If there is a 
@@ -21,6 +23,28 @@ system, make sure to get the latest package information by typing in:
 # pkg_updating
 
 on your command line. 
+
+Commands
+
+cache		This will use the previously downloaded CHECKSUM and package 
+		index instead of downloading and parsing again, which speeds
+		up the process considerably, however it will not discover new
+		updates.
+
+		example: python pkg_lite.py cache
+
+replace		This will create an update.sh which either upgrades or replaces
+		existing installed packages. If the same version is available 
+		on the package host, it will create lines to delete and 
+		reinstall packages. If a newer version is available it will
+		create lines to delete the package and udpate with the newer 
+		version.
+
+		Note: The 'replace' command cannot be used with the 'cache' 
+		command.
+
+		example: python pkg_lite.py replace
+
 
 
 See ups.txt and updates.sh for example output.
